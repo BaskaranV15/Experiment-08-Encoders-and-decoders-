@@ -62,35 +62,41 @@ D7 = X Y Z
 ### PROGRAM 
 /*
 Program for Endocers and Decoders  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: BASKARAN.V
+RegisterNumber:  212222230020
 */
-
-
-
-
-
-
+```
+module decoder(d0,d1,d2,d3,d4,d5,d6,d7,a,b,c); 
+output d0,d1,d2,d3,d4,d5,d6,d7;
+input a,b,c; 
+assign d0 = (~a&~b&~c);
+assign d1 = (~a&~b&c); 
+assign d2 = (~a&b&~c);
+assign d3 = (~a&b&c); 
+assign d4 = (a&~b&~c); 
+assign d5 = (a&~b&c); 
+assign d6 = (a&b&~c); 
+assign d7 = (a&b&c);
+endmodule
+```
+```
+module encoder(a,b,c,d0,d1,d2,d3,d4,d5,d6,d7); 
+output a,b,c; 
+input d0,d1,d2,d3,d4,d5,d6,d7; 
+or(a,d4,d5,d6,d7); 
+or(b,d2,d3,d6,d7); 
+or(c,d1,d3,d5,d7); 
+endmodule
+```
 ### RTL LOGIC  
-
-
-
-
-
-
-
-
+![Screenshot 2023-06-11 092005](https://github.com/BaskaranV15/Experiment-08-Encoders-and-decoders-/assets/118703522/3bfa5d68-9c5b-49d4-8e16-ddd7866eec75)
+![Screenshot 2023-06-11 092819](https://github.com/BaskaranV15/Experiment-08-Encoders-and-decoders-/assets/118703522/f5ba7c32-d05c-4916-bd3d-c0813a26c55c)
 ### TIMING DIGRAMS  
-
-
-
-
-
+![Screenshot 2023-06-11 092351](https://github.com/BaskaranV15/Experiment-08-Encoders-and-decoders-/assets/118703522/eb53602a-0459-447d-8f11-0e8ff4417b75)
+![Screenshot 2023-06-11 093749](https://github.com/BaskaranV15/Experiment-08-Encoders-and-decoders-/assets/118703522/7ad56b2a-49f1-42b4-8bf7-a6d335c7b554)
 ### TRUTH TABLE 
 
 
 
-
-
-
 ### RESULTS 
+Thus the program to desing encoder and decoder is done.
