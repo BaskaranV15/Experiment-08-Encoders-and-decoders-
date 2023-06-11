@@ -96,7 +96,7 @@ endmodule
 ![Screenshot 2023-06-11 093749](https://github.com/BaskaranV15/Experiment-08-Encoders-and-decoders-/assets/118703522/7ad56b2a-49f1-42b4-8bf7-a6d335c7b554)
 ### TRUTH TABLE 
 ![output](https://github.com/BaskaranV15/Experiment-08-Encoders-and-decoders-/blob/main/Screenshot%202023-06-11%20100333.png)
-![output]
+![output](https://github.com/BaskaranV15/Experiment-08-Encoders-and-decoders-/blob/main/Screenshot%202023-06-11%20100342.png)
 
 ### RESULTS 
 Thus the program to desing encoder and decoder is done.
